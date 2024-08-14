@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendário</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="month-year"></div>
+    <div id="calendar"></div>
+
+    <div id="buttons-container">
+        <button id="prev-month" onclick="prevMonth()">Mês Anterior</button>
+        <button id="next-month" onclick="nextMonth()">Próximo Mês</button>
+    </div>
+
+    <div id="event-modal" class="modal">
+        <span class="close">×</span>
+        <input type="text" id="event-name" placeholder="Nome do evento">
+        <button id="save-event">Salvar</button>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
